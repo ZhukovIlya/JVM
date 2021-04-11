@@ -1,5 +1,4 @@
 # JVM
-*При загрузки класа в Stack Memory начинается его выполнение 
 
 --1 Вначале JVM с помощью ClassLoader загрузит классы. С помощью Application ClassLoader загрузит класс JvmComprehension.
 С помощью Bootstrap ClassLoader загрузит классы System, Object и другие системные.
