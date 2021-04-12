@@ -1,11 +1,12 @@
 # JVM
 
 --1 Вначале JVM с помощью ClassLoader загрузит классы. С помощью Application ClassLoader загрузит класс JvmComprehension.
-С помощью Bootstrap ClassLoader загрузит классы System, Object и другие системные.
+С помощью Bootstrap ClassLoader загрузит классы System, Object и другие системные. Создаётся стековая память.
+
 
 public class JvmComprehension {
 
-    public static void main(String[] args) { --2 загрузит класс  main в Stack Memory
+    public static void main(String[] args) { --2 создаётся фрейм  main в Stack Memory
         int i = 1;                      // 1 --3 добавит в закруженный main переменную со значением
         Object o = new Object();        // 2 --4 загрузит в heap объект "o"
         Integer ii = 2;                 // 3 --5 загрузит в heap объект "ii"
